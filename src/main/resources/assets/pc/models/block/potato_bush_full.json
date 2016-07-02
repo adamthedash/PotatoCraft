@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "pc:blocks/potato_bush_full"
+  }
+}

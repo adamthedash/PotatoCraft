@@ -1,0 +1,21 @@
+item.potato.name=Potato
+item.potato_cake.name=Potato Cake
+
+item.potato_sword.name=Potato Sword
+item.potato_pickaxe.name=Potato Pickaxe
+item.potato_axe.name=Potato Axe
+item.potato_spade.name=Potato Shovel
+item.potato_hoe.name=Potato Hoe
+
+item.potato_helmet.name=Potato Helmet
+item.potato_chest.name=Potato Chestplate
+item.potato_legs.name=Potato Leggings
+item.potato_boots.name=Potato Boots
+
+tile.potato_block.name=Potato Block
+tile.potato_ore.name=Potato Ore
+tile.potato_bush_full.name=Full Potato Bush
+tile.potato_bush_empty.name=Empty Potato Bush
+
+itemGroup.tabPotatoCraft=Potato Craft
+
