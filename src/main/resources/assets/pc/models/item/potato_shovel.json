@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "pc:items/potato_spade"
+    "layer0": "pc:items/potato_shovel"
   }
 }

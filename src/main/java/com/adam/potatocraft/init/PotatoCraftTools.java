@@ -3,7 +3,7 @@ package com.adam.potatocraft.init;
 import com.adam.potatocraft.init.items.PotatoCraftAxe;
 import com.adam.potatocraft.init.items.PotatoCraftHoe;
 import com.adam.potatocraft.init.items.PotatoCraftPickaxe;
-import com.adam.potatocraft.init.items.PotatoCraftSpade;
+import com.adam.potatocraft.init.items.PotatoCraftShovel;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -17,7 +17,7 @@ public class PotatoCraftTools extends PotatoCraftItems{
 
     public static Item potato_pickaxe;
     public static Item potato_axe;
-    public static Item potato_spade;
+    public static Item potato_shovel;
     public static Item potato_hoe;
 
     public static void init(){
@@ -29,8 +29,8 @@ public class PotatoCraftTools extends PotatoCraftItems{
                 .setUnlocalizedName("potato_axe")
                 .setCreativeTab(PotatoCraftTabs.tabPotatoCraft);
 
-        potato_spade = registerItem(new PotatoCraftSpade(TOOL_MATERIAL_POTATO), "potato_spade")
-                .setUnlocalizedName("potato_spade")
+        potato_shovel = registerItem(new PotatoCraftShovel(TOOL_MATERIAL_POTATO), "potato_shovel")
+                .setUnlocalizedName("potato_shovel")
                 .setCreativeTab(PotatoCraftTabs.tabPotatoCraft);
 
         potato_hoe = registerItem(new PotatoCraftHoe(TOOL_MATERIAL_POTATO), "potato_hoe")
@@ -44,7 +44,7 @@ public class PotatoCraftTools extends PotatoCraftItems{
     public static void registerRenders(){
         registerRender(potato_pickaxe);
         registerRender(potato_axe);
-        registerRender(potato_spade);
+        registerRender(potato_shovel);
         registerRender(potato_hoe);
     }
 

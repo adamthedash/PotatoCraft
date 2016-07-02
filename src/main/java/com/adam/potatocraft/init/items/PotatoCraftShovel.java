@@ -16,13 +16,13 @@ import net.minecraft.world.World;
 /**
  * Created by Adam on 29/06/2016.
  */
-public class PotatoCraftSpade extends ItemSpade {
+public class PotatoCraftShovel extends ItemSpade {
 
     boolean alwaysEdible = false;
     int healAmount = 4;
     float saturationModifier = 0.5F;
 
-    public PotatoCraftSpade(ToolMaterial material){
+    public PotatoCraftShovel(ToolMaterial material){
         super(material);
     }
 
