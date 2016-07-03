@@ -22,8 +22,8 @@ public class PotatoCraftItems {
 
     public static void init(){
         potato = registerItem(new Item(), "potato")
-                .setUnlocalizedName("potato")
-                .setCreativeTab(PotatoCraftTabs.tabPotatoCraft);
+                .setUnlocalizedName("potato");
+//                .setCreativeTab(PotatoCraftTabs.tabPotatoCraft);
 
 
 
@@ -33,14 +33,15 @@ public class PotatoCraftItems {
         registerRender(potato);
     }
 
+
+    /**	registerItem start**/
+
     public static void registerRender(Item item){
         Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
                 .register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
 
     }
 
-
-    //	registerItem
     public static Item registerItem(Item item, String name){
         return registerItem(item, name, null);
 
@@ -52,9 +53,6 @@ public class PotatoCraftItems {
 
     }
 
-//	RegisterItem end
-
-
-
+    /**	registerItem start**/
 
 }

@@ -19,7 +19,7 @@ public class PotatoCraftArmors extends PotatoCraftItems{
 
 
     public static Item potato_helmet;
-    public static Item potato_chest;
+    public static Item potato_chestplate;
     public static Item potato_legs;
     public static Item potato_boots;
 
@@ -29,8 +29,8 @@ public class PotatoCraftArmors extends PotatoCraftItems{
                 .setUnlocalizedName("potato_helmet")
                 .setCreativeTab(PotatoCraftTabs.tabPotatoCraft);
 
-        potato_chest = registerItem(new PotatoCraftArmor(ARMOR_MATERIAL_POTATO, 1, EntityEquipmentSlot.CHEST), "potato_chest")
-                .setUnlocalizedName("potato_chest")
+        potato_chestplate = registerItem(new PotatoCraftArmor(ARMOR_MATERIAL_POTATO, 1, EntityEquipmentSlot.CHEST), "potato_chestplate")
+                .setUnlocalizedName("potato_chestplate")
                 .setCreativeTab(PotatoCraftTabs.tabPotatoCraft);
 
         potato_legs = registerItem(new PotatoCraftArmor(ARMOR_MATERIAL_POTATO, 1, EntityEquipmentSlot.LEGS), "potato_legs")
@@ -45,7 +45,7 @@ public class PotatoCraftArmors extends PotatoCraftItems{
 
     public static void registerRenders(){
         registerRender(potato_helmet);
-        registerRender(potato_chest);
+        registerRender(potato_chestplate);
         registerRender(potato_legs);
         registerRender(potato_boots);
     }
