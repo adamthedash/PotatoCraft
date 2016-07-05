@@ -1,6 +1,5 @@
 package com.adam.potatocraft.init.blocks;
 
-import com.adam.potatocraft.init.PotatoCraftItems;
 import net.minecraft.block.BlockOre;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Items;
@@ -18,10 +17,10 @@ public class PotatoOre extends BlockOre{
     public PotatoOre(){
 
         super();
-        this.setHarvestLevel("pickaxe", 2);
+        this.setHarvestLevel("pickaxe", 1);
         setRegistryName("potato_ore");
         setResistance(3F);
-        setHardness(3F);
+        setHardness(2F);
 
     }
 
