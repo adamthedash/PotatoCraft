@@ -17,8 +17,6 @@ public class PotatoCraftRecipes {
         regCraftingRecipes(mgr);
         regFurnaceRecipes(furn);
 
-
-
     }
 
     public static void regCraftingRecipes(CraftingManager mgr){

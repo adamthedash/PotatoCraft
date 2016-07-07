@@ -20,7 +20,7 @@ public class MyWorldGenerator implements IWorldGenerator {
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
 
-        // Current chunk 0,0 postions
+        // Current chunk 0,0 positions
         int blockX = chunkX * 16;
         int blockZ = chunkZ * 16;
 
@@ -35,16 +35,13 @@ public class MyWorldGenerator implements IWorldGenerator {
         }
     }
 
-    WorldGenMinable genPotatoOre;
-    WorldGenerator genPotatoBushes;
-
 
     private void generateOverworld(World world, Random rand, int blockX, int blockZ) {
 
-        genPotatoOre = new WorldGenMinable(PotatoCraftBlocks.potato_ore.getBlockState().getBaseState(), 20);
+        WorldGenMinable genPotatoOre = new WorldGenMinable(PotatoCraftBlocks.potato_ore.getBlockState().getBaseState(), 20);
         genPotatoOre.generate(world, rand, new BlockPos(blockX, rand.nextInt(32) +32, blockZ));
 
-        genPotatoBushes = new WorldGenModBush(PotatoCraftBlocks.potato_bush_full, 4);
+        WorldGenerator genPotatoBushes = new WorldGenModBush(PotatoCraftBlocks.potato_bush_full, 4);
         genPotatoBushes.generate(world, rand, new BlockPos(blockX, 64, blockZ));
 
     }

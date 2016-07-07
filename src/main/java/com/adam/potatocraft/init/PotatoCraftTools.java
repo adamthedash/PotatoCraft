@@ -7,18 +7,21 @@ import com.adam.potatocraft.init.items.PotatoCraftShovel;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
+import static com.adam.potatocraft.main.MyHelperMethods.registerItem;
+import static com.adam.potatocraft.main.MyHelperMethods.registerRender;
+
 /**
  * Created by Adam on 29/06/2016.
  */
 public class PotatoCraftTools extends PotatoCraftItems{
 
     //	    New material for tools
-    public static final Item.ToolMaterial TOOL_MATERIAL_POTATO = EnumHelper.addToolMaterial("POTATO", 1, 100, 5.0F, 1.5F, 8);
+    private static final Item.ToolMaterial TOOL_MATERIAL_POTATO = EnumHelper.addToolMaterial("POTATO", 1, 100, 5.0F, 1.5F, 8);
 
-    public static Item potato_pickaxe;
-    public static Item potato_axe;
-    public static Item potato_shovel;
-    public static Item potato_hoe;
+    private static Item potato_pickaxe;
+    private static Item potato_axe;
+    private static Item potato_shovel;
+    private static Item potato_hoe;
 
     public static void init(){
         potato_pickaxe = registerItem(new PotatoCraftPickaxe(TOOL_MATERIAL_POTATO), "potato_pickaxe")

@@ -9,21 +9,20 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 
 import java.util.Random;
 
+import static com.adam.potatocraft.main.MyHelperMethods.getGroundFromAbove;
+
 /**
  * Created by Adam on 05/07/2016.
  */
 public class WorldGenModBush extends WorldGenerator {
 
-    Block bush;
-    int blocksPerChunk;
+    private Block bush;
+    private int blocksPerChunk;
 
     public WorldGenModBush(Block bushIn, int blocksPerChunk){
         this.bush = bushIn;
         this.blocksPerChunk = blocksPerChunk;
     }
-
-
-
 
     @Override
     public boolean generate(World worldIn, Random rand, BlockPos position) {
@@ -53,24 +52,6 @@ public class WorldGenModBush extends WorldGenerator {
         }
 
         return false;
-    }
-
-
-
-    /**HELPER METHODS**/
-    // find a grass or dirt block to place the bush on
-    public static int getGroundFromAbove(World world, int x, int z)
-    {
-        int y = 255;
-        boolean foundGround = false;
-        while(!foundGround && y-- >= 0)
-        {
-            Block blockAt = world.getBlockState(new BlockPos(x,y,z)).getBlock();
-            // "ground" for our bush is grass or dirt
-            foundGround = blockAt == Blocks.DIRT || blockAt == Blocks.GRASS;
-        }
-
-        return y;
     }
 
 }

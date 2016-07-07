@@ -19,14 +19,12 @@ import net.minecraft.world.World;
  */
 public class PotatoCraftHoe extends ItemHoe{
 
+    private boolean alwaysEdible = false;
+    private int healAmount = 4;
+    private float saturationModifier = 0.5F;
     public PotatoCraftHoe(Item.ToolMaterial material){
         super(material);
     }
-
-    boolean alwaysEdible = false;
-    int healAmount = 4;
-    float saturationModifier = 0.5F;
-
 
     //    Make the pickaxe edible - all methods below
     public EnumAction getItemUseAction(ItemStack stack)
@@ -57,7 +55,7 @@ public class PotatoCraftHoe extends ItemHoe{
             entityplayer.getFoodStats().addStats(healAmount, saturationModifier);
             worldIn.playSound(null, entityplayer.posX, entityplayer.posY, entityplayer.posZ, SoundEvents.ENTITY_PLAYER_BURP, SoundCategory.PLAYERS, 0.5F, worldIn.rand.nextFloat() * 0.1F + 0.9F);
 //            this.onFoodEaten(stack, worldIn, entityplayer);
-            entityplayer.addStat(StatList.getObjectUseStats(this)); // TODO: Check if correct
+            entityplayer.addStat(StatList.getObjectUseStats(this));
         }
 
         return stack;

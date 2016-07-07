@@ -7,6 +7,7 @@ import net.minecraft.item.ItemSword;
  */
 public class PotatoCraftSword extends ItemSword {
 
+    //    TODO: Add a sword item
     public PotatoCraftSword(ToolMaterial material){
         super(material);
     }

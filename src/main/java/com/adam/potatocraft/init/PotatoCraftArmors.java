@@ -8,6 +8,9 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraftforge.common.util.EnumHelper;
 
+import static com.adam.potatocraft.main.MyHelperMethods.registerItem;
+import static com.adam.potatocraft.main.MyHelperMethods.registerRender;
+
 /**
  * Created by Adam on 29/06/2016.
  */
@@ -15,13 +18,13 @@ public class PotatoCraftArmors extends PotatoCraftItems{
 
     //		New material for armor
 //	    TODO: Find out what goes in textureName. "pc:potato" as placeholder
-    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_POTATO = EnumHelper.addArmorMaterial("POTATO", Reference.MODID + ":potato", 5, new int[]{1, 3, 4, 1}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1F);
+    private static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_POTATO = EnumHelper.addArmorMaterial("POTATO", Reference.MODID + ":potato", 5, new int[]{1, 3, 4, 1}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1F);
 
 
-    public static Item potato_helmet;
-    public static Item potato_chestplate;
-    public static Item potato_legs;
-    public static Item potato_boots;
+    private static Item potato_helmet;
+    private static Item potato_chestplate;
+    private static Item potato_legs;
+    private static Item potato_boots;
 
     public static void init(){
         //		Armor
