@@ -10,7 +10,7 @@ import net.minecraft.init.Items;
 public class ModBush {
 
     public Block bushEmpty;
-    public Block bushFull;
+    public ModBushFull bushFull;
 
     public ModBush(String name) {
 
@@ -23,8 +23,8 @@ public class ModBush {
                 .setRegistryName(emptyName)
                 .setCreativeTab(PotatoCraftTabs.tabPotatoCraft);
 
-        bushFull = new ModBushFull(this, Items.POTATO)
-                .setUnlocalizedName(fullName)
+        bushFull = new ModBushFull(this, Items.POTATO);
+        bushFull.setUnlocalizedName(fullName)
                 .setRegistryName(fullName)
                 .setCreativeTab(PotatoCraftTabs.tabPotatoCraft);
 

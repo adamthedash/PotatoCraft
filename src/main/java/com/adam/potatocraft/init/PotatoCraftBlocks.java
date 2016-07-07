@@ -1,6 +1,7 @@
 package com.adam.potatocraft.init;
 
 import com.adam.potatocraft.init.blocks.ModBush;
+import com.adam.potatocraft.init.blocks.ModBushFull;
 import com.adam.potatocraft.init.blocks.PotatoBlock;
 import com.adam.potatocraft.init.blocks.PotatoOre;
 import net.minecraft.block.Block;
@@ -14,7 +15,7 @@ import static com.adam.potatocraft.main.MyHelperMethods.registerRender;
 public class PotatoCraftBlocks {
 
     public static PotatoBlock potato_block;
-    public static Block potato_bush_full;
+    public static ModBushFull potato_bush_full;
     public static Block potato_bush_empty;
     public static PotatoOre potato_ore;
 
