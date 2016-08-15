@@ -17,14 +17,16 @@ import static com.adam.potatocraft.main.MyHelperMethods.registerRender;
 public class PotatoCraftArmors extends PotatoCraftItems{
 
     //		New material for armor
-//	    TODO: Find out what goes in textureName. "pc:potato" as placeholder
+    /**
+     * Find out what goes in textureName. "pc:potato" as placeholder
+     */
     private static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_POTATO = EnumHelper.addArmorMaterial("POTATO", Reference.MODID + ":potato", 5, new int[]{1, 3, 4, 1}, 15, SoundEvents.ITEM_ARMOR_EQUIP_GENERIC, 1F);
 
 
-    private static Item potato_helmet;
-    private static Item potato_chestplate;
-    private static Item potato_legs;
-    private static Item potato_boots;
+    public static Item potato_helmet;
+    public static Item potato_chestplate;
+    public static Item potato_legs;
+    public static Item potato_boots;
 
     public static void init(){
         //		Armor

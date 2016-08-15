@@ -1,9 +1,6 @@
 package com.adam.potatocraft.init;
 
-import com.adam.potatocraft.init.items.PotatoCraftAxe;
-import com.adam.potatocraft.init.items.PotatoCraftHoe;
-import com.adam.potatocraft.init.items.PotatoCraftPickaxe;
-import com.adam.potatocraft.init.items.PotatoCraftShovel;
+import com.adam.potatocraft.init.items.*;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
@@ -22,6 +19,7 @@ public class PotatoCraftTools extends PotatoCraftItems{
     private static Item potato_axe;
     private static Item potato_shovel;
     private static Item potato_hoe;
+    private static Item potato_sword;
 
     public static void init(){
         potato_pickaxe = registerItem(new PotatoCraftPickaxe(TOOL_MATERIAL_POTATO), "potato_pickaxe")
@@ -40,7 +38,9 @@ public class PotatoCraftTools extends PotatoCraftItems{
                 .setUnlocalizedName("potato_hoe")
                 .setCreativeTab(PotatoCraftTabs.tabPotatoCraft);
 
-
+        potato_sword = registerItem(new PotatoCraftSword(TOOL_MATERIAL_POTATO), "potato_sword")
+                .setUnlocalizedName("potato_sword")
+                .setCreativeTab(PotatoCraftTabs.tabPotatoCraft);
 
     }
 
@@ -49,6 +49,7 @@ public class PotatoCraftTools extends PotatoCraftItems{
         registerRender(potato_axe);
         registerRender(potato_shovel);
         registerRender(potato_hoe);
+        registerRender(potato_sword);
     }
 
 

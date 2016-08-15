@@ -32,6 +32,7 @@ public class WorldGenModBush extends WorldGenerator {
 
 //        Uses temperature of biome for generation. Could be mod-compatible? TODO: Check if biome temp works with mod biomes
         if (worldIn.getBiomeGenForCoords(position).getTempCategory() == Biome.TempCategory.MEDIUM) {
+
 //        Uses list of biomes for generation
 //        if (Arrays.asList(bush.biomeList).contains(worldIn.getBiomeGenForCoords(position))){
             for (int i = 0; i < blocksPerChunk; i++) {
