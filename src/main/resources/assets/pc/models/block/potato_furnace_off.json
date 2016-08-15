@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "pc:blocks/potato_furnace_top",
+    "front": "pc:blocks/potato_furnace_front_off",
+    "side": "pc:blocks/potato_furnace_side"
+  }
+}

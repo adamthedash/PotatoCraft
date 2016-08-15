@@ -16,6 +16,10 @@ tile.potato_block.name=Potato Block
 tile.potato_ore.name=Potato Ore
 tile.potato_bush_full.name=Full Potato Bush
 tile.potato_bush_empty.name=Empty Potato Bush
+tile.potato_furnace_off.name=Potato Furnace
+tile.potato_furnace_on.name=Potato Furnace (On)
+
+container.potato_furnace=Potato Furnace
 
 itemGroup.tabPotatoCraft=Potato Craft
 

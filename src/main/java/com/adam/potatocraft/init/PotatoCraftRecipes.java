@@ -22,6 +22,7 @@ public class PotatoCraftRecipes {
     public static void regCraftingRecipes(CraftingManager mgr){
 //        Shaped recipes
         mgr.addRecipe(new ItemStack(PotatoCraftBlocks.potato_block, 1), "ppp", "ppp", "ppp", 'p', Items.POTATO);
+        mgr.addRecipe(new ItemStack(PotatoCraftBlocks.potato_furnace_off, 1), "ppp", "p p", "ppp", 'p', Items.POTATO);
 
 //        Shapeless recipes
         mgr.addShapelessRecipe(new ItemStack(Items.POTATO, 9), PotatoCraftBlocks.potato_block);

@@ -4,6 +4,7 @@ package com.adam.potatocraft.proxy;
  * Created by Adam on 29/06/2016.
  */
 import com.adam.potatocraft.init.*;
+import com.adam.potatocraft.init.tileentity.blocks.TileEntityPotatoFurnace;
 import com.adam.potatocraft.main.Reference;
 import com.adam.potatocraft.structures.MyWorldGenerator;
 import net.minecraftforge.client.model.obj.OBJLoader;
@@ -27,6 +28,11 @@ public class ClientProxy extends CommonProxy{
 
 //		Crafting recipes
         PotatoCraftRecipes.init();
+
+//      Tile Entities
+//        TODO: Find out what ID does here
+        GameRegistry.registerTileEntity(TileEntityPotatoFurnace.class, "PF");
+
 
 //		For custom block models
         OBJLoader.INSTANCE.addDomain(Reference.MODID);

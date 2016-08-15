@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "pc:potato_furnace_on"
+    },
+    "facing=south": {
+      "model": "pc:potato_furnace_on",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pc:potato_furnace_on",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "pc:potato_furnace_on",
+      "y": 90
+    }
+  }
+}
